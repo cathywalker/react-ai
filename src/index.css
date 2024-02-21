@@ -11,3 +11,47 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;  
+  background-color: #FDFD96; /* A light, cheerful background color */
+  color: #333; /* High contrast text color for readability */
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #00f2ffc0;
+  color: #0000009f;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.1); /* A little animation for button interaction */
+  background-color: #0a3856; 
+  color: #000;
+}
+
+button:focus {
+  outline: none;
+}
+
+.input-container, .button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
