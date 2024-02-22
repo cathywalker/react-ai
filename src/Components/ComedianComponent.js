@@ -1,8 +1,17 @@
-const ComedianButton = ({ comedian, isSelected, onSelect }) => (
-    <button onClick={() => onSelect(comedian)}
-      style={{ backgroundColor: isSelected ? '#FF5733' : '#00f2ffc0' }}>
-      {comedian}
-    </button>
-  );
+const buttonStyles = {
+  selected: {
+    backgroundColor: '#FF5733', 
+  },
+  unselected: {
+    backgroundColor: '#00f2ffc0',
+  }
+};
 
-  export default ComedianButton;
+const ComedianButton = ({ comedian, isSelected, onSelect }) => (
+  <button onClick={() => onSelect(comedian)}
+    style={isSelected ? buttonStyles.selected : buttonStyles.unselected}>
+    {comedian}
+  </button>
+);
+
+export default ComedianButton;

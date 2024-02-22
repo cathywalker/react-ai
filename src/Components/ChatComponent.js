@@ -33,7 +33,7 @@ const ChatComponent = () => {
         model:"gpt-3.5-turbo",
         messages: [
           { role: 'system', content: 'You are a helpful assistant.' },
-          { role: 'user', content: `give me an list of 25 comedians names in the style of ['name 1', 'name 2'] with no other text in the response and exclude Ellen Degeneres and Louis C.K.` },
+          { role: 'user', content: `give me an list of 25 comedians names in the style of ['name 1', 'name 2'] with no other text in the response` },
         ],
       },
       {
