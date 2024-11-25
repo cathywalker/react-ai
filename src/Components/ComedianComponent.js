@@ -1,9 +1,11 @@
 const buttonStyles = {
   selected: {
     backgroundColor: '#FF5733', 
+    color: '#FFFFFF',
   },
   unselected: {
     backgroundColor: '#00f2ffc0',
+    color: '#000000',
   }
 };
 
