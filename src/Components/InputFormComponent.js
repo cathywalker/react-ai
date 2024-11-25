@@ -23,8 +23,9 @@ const InputForm = ({ input, onInputChange, handleSubmit, displayWarning }) => (
         value={input}
         onChange={onInputChange}
         style={styles.inputStyle}
+        label="joke-input"
       />
-      {displayWarning && <p style={styles.warningStyle}>Please enter a topic</p>}
+      {displayWarning && <p aria-live style={styles.warningStyle}>Please enter a topic</p>}
       <button type='submit' style={styles.buttonStyle}>
         Get me a joke in the style of my chosen Comedian
       </button>
